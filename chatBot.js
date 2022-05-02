@@ -1,13 +1,50 @@
 const { Client } = require('whatsapp-web.js');
-cons qrcode = require('qrcode-terminal');
+const qrcode = require('qrcode-terminal');
+
 const client = new Client();
 
-client.on('qr', qr => {
-    qrcode.generate(qr, {small: true});
-});
+function responseTable(message) {
+	switch(message.body) {
+		case '!hola':
+			sendResponseMessage(message.from, "Hola! como estas?");
+			break;
 
-client.on('ready', () => {
-    console.log('Client is ready!');
-});
+		case 'Chau':
+			sendResponseMessage(message.from, "Nos vemos!");
 
-client.initialize();t
+		default:
+			break;
+	}
+
+	// sendResponseMessage(message.from, responseMessage);
+}
+
+function sendResponseMessage(sender, message) {
+	console.log(sender + message);
+	client.sendMessage(sender, message);
+}
+
+function listenMessage() {
+	client.on('message', message => {
+		responseTable(message);
+	});
+}
+
+function chatBot() {
+	client.on('qr', qr => {
+   		qrcode.generate(qr, {small: true});
+	});
+
+	client.on('ready', () => {
+		console.log("Client is ready!");
+		listenMessage();
+	});
+	
+	client.initialize();
+}
+
+function main() {
+	chatBot();
+}
+
+main();

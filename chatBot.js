@@ -1,12 +1,11 @@
 const { Client } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
-const Simon = require('./simon.json');
 var client;
 
 
 function responseMessageTable(message) {
 	switch(message.body) {
-		case 'Hola':
+		case 'Hola simon':
 			sendResponseMessage(message.from, "Hola soy Simon! Este es un mensaje automatico. Gonzalo te contestara apenas se encuentre disponible");
 	}
 }
@@ -14,8 +13,8 @@ function responseMessageTable(message) {
 // Cuanto queda para vernos, leeme un poema, escribime un poema.
 function responseMessageChiaraTable(message) {
 	switch(message.body) {
-		case '!simon':
-			sendResponseMessage(message.from, Simon.SimonMessage);
+		case 'Hola simon':
+			sendResponseMessage(message.from, "Hola Chiarita. Que queres que te consiga?");
 			break;
 
 		case 'Hola':
@@ -46,7 +45,7 @@ function sendResponseMessage(receptor, message) {
 
 function listenMessage() {
 	client.on('message', message => {
-		if (message.from == 'chiara') {
+		if (message.from == '5492234973593@c.us') { 
 			responseMessageChiaraTable(message);
 		}
 		else {

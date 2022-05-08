@@ -6,7 +6,17 @@ class ChatBot {
 	constructor() {
 		this.client = new Client();
 		this.simon = new Simon(this);
+	}
 
+	sendResponseMessage(receptor, message) {
+		this.client.sendMessage(receptor, message);
+	}
+
+	listenMessage(message) {
+		this.simon.responseMessage(message);
+	}
+
+	initialize() {
 		this.client.on('qr', qr => {
 			qrcode.generate(qr, {small: true});
 		});
@@ -21,18 +31,6 @@ class ChatBot {
 
 		this.client.initialize();
 	}
-
-	sendResponseMessage(receptor, message) {
-		this.client.sendMessage(receptor, message);
-	}
-
-	listenMessage(message) {
-		this.simon.responseMessage(message);
-	}
 }
 
-function chatBot() {
-	new ChatBot();
-}
-
-chatBot();
+module.exports = { ChatBot }

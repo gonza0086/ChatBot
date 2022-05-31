@@ -4,8 +4,89 @@
 			"Hola simon",
 			"Simon",
 			"!simon",
-			"Simon!"
+			"Simon!",
+			"0"
 		],
 		"key": "SALUTE"
-	}	
+	},
+
+	{
+		"keywords": "Chau simon",
+		"key": "GOODBYE"
+	},
+
+	{
+		"keywords": "A",
+		"key": "A"
+	},
+
+	{
+		"keywords": "1",
+		"key": "1"
+	},
+
+	{
+		"keywords": "2",
+		"key": "2"
+	},
+
+	{
+		"keywords": "3",
+		"key": "3"
+	},
+
+	{
+		"keywords": "4",
+		"key": "4"
+	},
+
+	{
+		"keywords": "5",
+		"key": "5"
+	},
+
+	{
+		"keywords": "6",
+		"key": "6"
+	},
+
+	{
+		"keywords": "7",
+		"key": "7"
+	},
+
+	{
+		"keywords": "8",
+		"key": "8"
+	},
+
+	{
+		"keywords": "9",
+		"key": "9"
+	},
+
+	{
+		"keywords": "10",
+		"key": "10"
+	},
+
+	{
+		"keywords": "11",
+		"key": "11"
+	},
+
+	{
+		"keywords": "12",
+		"key": "12"
+	},
+
+	{
+		"keywords": "B",
+		"key": "B"
+	},
+
+	{
+		"keywords": "C",
+		"key": "C"
+	}
 ]

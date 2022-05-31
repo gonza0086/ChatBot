@@ -1,7 +1,87 @@
 [
 	{
 		"key": "SALUTE",
-		"response": "Hola soy Simon!"
+		"response": "Hola Chiartia! soy Simon. Si necesitas algo avisame\nA. Leer Poemas\nB. Canciones Dedicadas\nC. Tiempo Para Vernos"
+	},
+
+	{
+		"key": "GOODBYE",
+		"response": "Nos vemos Chiarita! Cualquier cosa que necesites no dudes en llamarme."
+	},
+
+	{
+		"key": "A",
+		"response": "Estos son los Poemas que tengo:\n1. Madrugadas de un Enamorado\n2. El Balcon de mi Casa\n3. Debe Ser el Amor\n4. Querida Amiga\n5. Giladas\n6. El Poder de tus Ojos\n7. Una Palabra\n8. Sueños\n9. Nadie Más\n10. Otra Vez\n11. Noche de Caza\n12. Mi Pequeña Libreta Azul\n\n0. Menu"
+	},
+
+	{
+		"key": "1",
+		"response": "Madrugadas de un Enamorado"
+	},
+
+	{
+		"key": "2",
+		"response": "El Balcon de mi Casa"
+	},
+
+	{
+		"key": "3",
+		"response": "Debe Ser el Amor"
+	},
+
+	{
+		"key": "4",
+		"response": "Querida Amiga"
+	},
+
+	{
+		"key": "5",
+		"response": "Giladas"
+	},
+
+	{
+		"key": "6",
+		"response": " El Poder de tus Ojos"
+	},
+
+	{
+		"key": "7",
+		"response": "Una Palabra"
+	},
+
+	{
+		"key": "8",
+		"response": "Sueños"
+	},
+
+	{
+		"key": "9",
+		"response": " Nadie Más"
+	},
+
+	{
+		"key": "10",
+		"response": "Otra Vez"
+	},
+
+	{
+		"key": "11",
+		"response": "Noche de Caza"
+	},
+
+	{
+		"key": "12",
+		"response": " Mi Pequeña Libreta Azul"
+	},
+
+	{
+		"key": "B",
+		"response": "Coming soon..."
+	},
+
+	{
+		"key": "C",
+		"response": "Coming soon..."
 	}
 ]
 
